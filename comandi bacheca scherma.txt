@@ -1,0 +1,364 @@
+cp ~/Documents/App_bacheca_scherma/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+cp ~/Documents/App_bacheca_scherma/files\ react/usePushNotification.js ~/bacheca-scherma-app/src/hooks/usePushNotification.js
+
+cd ~/bacheca-scherma/functions
+npm install
+cd ..
+firebase deploy --only functions
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+
+
+
+
+# Sostituisci firestore.rules
+cp ~/Downloads/firestore.rules ./firestore.rules
+
+# Sostituisci i file delle Functions
+cp ~/Downloads/index.js ./functions/index.js
+cp ~/Downloads/auth.js ./functions/auth.js
+cp ~/Downloads/admin.js ./functions/admin.js
+cp ~/Downloads/notifiche.js ./functions/notifiche.js
+cp ~/Downloads/categorie.js ./functions/categorie.js
+cp ~/Downloads/package.json ./functions/package.json
+
+
+cp ~/Downloads/files\ react/auth.js ~/bacheca-scherma/functions/auth.js
+cp ~/Downloads/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+cp ~/Downloads/files\ react/notifiche.js ~/bacheca-scherma/functions/notifiche.js
+cp ~/Downloads/files\ react/package.json ~/bacheca-scherma/functions/package.json
+cp ~/Downloads/files\ react/manifest.json ~/bacheca-scherma-app/public/manifest.json
+cp ~/Downloads/files\ react/service-worker.js ~/bacheca-scherma-app/src/service-worker.js
+cp ~/Downloads/files\ react/usePushNotification.js ~/bacheca-scherma-app/src/hooks/usePushNotification.js
+cp ~/Downloads/files\ react/BannerPush.js ~/bacheca-scherma-app/src/components/ui/BannerPush.js
+cp ~/Downloads/files\ react/Bacheca.js ~/bacheca-scherma-app/src/pages/bacheca/Bacheca.js
+cp ~/Downloads/files\ react/index.html ~/bacheca-scherma-app/public/index.html
+cd ~/bacheca-scherma/functions
+
+npm install
+cd ..
+firebase deploy --only functions
+
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma-app/src/service-worker.js
+cp ~/Documents/App_bacheca_scherma/files\ react/usePushNotification.js ~/bacheca-scherma-app/src/hooks/usePushNotification.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Rinnovo.js ~/bacheca-scherma-app/src/pages/admin/Rinnovo.js
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaIscritto.js ~/bacheca-scherma-app/src/pages/admin/ModificaIscritto.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Profilo.js ~/bacheca-scherma-app/src/pages/bacheca/Profilo.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Login.js ~/bacheca-scherma-app/src/pages/auth/Login.js
+cp ~/Documents/App_bacheca_scherma/altri\ file/firestore.rules ~/bacheca-scherma/firestore.rules
+
+
+cd ~/bacheca-scherma
+firebase deploy --only functions
+
+firebase deploy --only firestore:rules
+
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma-app/src/service-worker.js
+
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/useAuth.js ~/bacheca-scherma-app/src/hooks/useAuth.js
+cp ~/Documents/App_bacheca_scherma/files\ react/CompletaProfilo.js ~/bacheca-scherma-app/src/pages/auth/CompletaProfilo.js
+
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma-app/src/service-worker.js
+
+cd ~/bacheca-scherma
+firebase deploy --only functions
+
+cd ~/bacheca-scherma-app
+npm run build
+cp -r build/* ~/bacheca-scherma/build/
+cd ~/bacheca-scherma
+firebase deploy --only hosting
+
+
+cp "/Users/francescocordua/Documents/App_bacheca_scherma/files react/admin.js" \
+     /percorso/functions/index.js
+
+
+
+! gcloud logging read 'resource.type="cloud_run_revision" AND resource.labels.service_name="onavvisocreato"' --project=fcbachecascherma --limit=30 --order=desc --format="table(timestamp,textPayload,jsonPayload.message)"
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/notifiche.js ~/bacheca-scherma/functions/notifiche.js
+
+firebase deploy --only functions:onAvvisoCreato,functions:inviaNotifica
+
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma/public/service-worker.js
+
+npm run build --prefix ~/bacheca-scherma && firebase deploy --only hosting
+
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma-app/src/service-worker.js
+cp ~/Documents/App_bacheca_scherma/files\ react/service-worker.js ~/bacheca-scherma-app/public/service-worker.js
+cd ~/bacheca-scherma-app && npm run build && firebase deploy --only hosting
+
+Resume this session with:─────────────────────────────────────────────────────────────────────────
+claude --resume a10ebb24-bb1e-4d53-8f7c-267e7e644ca0
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/usePushNotification.js ~/bacheca-scherma-app/src/hooks/usePushNotification.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Registrazione.js ~/bacheca-scherma-app/src/pages/auth/Registrazione.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Registrazione.js ~/bacheca-scherma-app/src/pages/auth/Registrazione.js
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Registrazione.js ~/bacheca-scherma-app/src/pages/auth/Registrazione.js
+cp ~/Documents/App_bacheca_scherma/files\ react/AggiungiFiglio.js ~/bacheca-scherma-app/src/pages/bacheca/AggiungiFiglio.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscritti.js ~/bacheca-scherma-app/src/pages/admin/Iscritti.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+firebase deploy --only functions:collegaUtentePreRegistrato
+
+
+cp ~/Documents/App_bacheca_scherma/altri\ file/firestore.rules ~/bacheca-scherma/firestore.rules
+firebase deploy --only firestore:rules
+
+cp ~/Documents/App_bacheca_scherma/files\ react/AggiungiFiglio.js ~/bacheca-scherma-app/src/pages/bacheca/AggiungiFiglio.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/AggiungiFiglio.js ~/bacheca-scherma-app/src/pages/bacheca/AggiungiFiglio.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscritti.js ~/bacheca-scherma-app/src/pages/admin/Iscritti.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Registrazione.js ~/bacheca-scherma-app/src/pages/auth/Registrazione.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/admin.js ~/bacheca-scherma/functions/admin.js
+firebase deploy --only functions:eliminaIscritto
+
+cd ~/bacheca-scherma && firebase deploy --only functions:onRelazioneCreta,functions:onIscrizioneCreata
+
+cp ~/bacheca-scherma/functions/auth.js ~/Documents/App_bacheca_scherma/files\ react/auth.js
+
+cp ~/Documents/App_bacheca_scherma/files\ react/AggiungiFiglio.js  ~/bacheca-scherma-app/src/pages/bacheca/AggiungiFiglio.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting
+
+claude --resume a10ebb24-bb1e-4d53-8f7c-267e7e644ca0
+
+cp ~/Documents/App_bacheca_scherma/files\ react/BannerInstalla.js ~/bacheca-scherma-app/src/components/ui/BannerInstalla.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+cp ~/Documents/App_bacheca_scherma/files\ react/Login.js ~/bacheca-scherma-app/src/pages/auth/Login.js
+cp ~/Documents/App_bacheca_scherma/files\ react/BannerInstalla.js ~/bacheca-scherma-app/src/components/ui/BannerInstalla.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/bacheca/Iscrizione.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd  ~/bacheca-scherma && firebase deploy --only hosting
+
+smtp://a7fd6a001@smtp-brevo.com:bsktupCmbz1l2X1@smtp-relay.brevo.com:587
+
+
+
+Tutte le modifiche sono fatte. Per il deploy, nota che getSocietaId.js va
+  copiato in src/lib/:
+
+cp ~/Documents/App_bacheca_scherma/files\ react/getSocietaId.js ~/bacheca-scherma-app/src/lib/getSocietaId.js
+cp ~/Documents/App_bacheca_scherma/files\ react/App.js ~/bacheca-scherma-app/src/App.js
+cp ~/Documents/App_bacheca_scherma/files\ react/LayoutUtente.js ~/bacheca-scherma-app/src/components/ui/LayoutUtente.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Login.js ~/bacheca-scherma-app/src/pages/auth/Login.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Registrazione.js ~/bacheca-scherma-app/src/pages/auth/Registrazione.js
+cp ~/Documents/App_bacheca_scherma/files\ react/CompletaProfilo.js ~/bacheca-scherma-app/src/pages/auth/CompletaProfilo.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Profilo.js ~/bacheca-scherma-app/src/pages/bacheca/Profilo.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/useAuth.js ~/bacheca-scherma-app/src/hooks/useAuth.js
+cp ~/Documents/App_bacheca_scherma/files\ react/BannerInstalla.js ~/bacheca-scherma-app/src/components/ui/BannerInstalla.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/useAuth.js ~/bacheca-scherma-app/src/hooks/useAuth.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cp ~/Documents/App_bacheca_scherma/altri\ file/firestore.rules ~/bacheca-scherma/firestore.rules
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting,firestore:rules
+
+cp ~/Documents/App_bacheca_scherma/files\ react/getSocietaId.js ~/bacheca-scherma-app/src/lib/getSocietaId.js
+cp ~/Documents/App_bacheca_scherma/files\ react/App.js ~/bacheca-scherma-app/src/App.js
+cp ~/Documents/App_bacheca_scherma/files\ react/LandingPage.js ~/bacheca-scherma-app/src/pages/LandingPage.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Bacheca.js ~/bacheca-scherma-app/src/pages/bacheca/Bacheca.js
+cp ~/Documents/App_bacheca_scherma/altri\ file/firestore.rules ~/bacheca-scherma/firestore.rules
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/
+cd ~/bacheca-scherma && firebase deploy --only hosting,firestore:rules
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/LayoutUtente.js ~/bacheca-scherma-app/src/components/ui/LayoutUtente.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cp ~/Documents/App_bacheca_scherma/files\ react/LayoutUtente.js ~/bacheca-scherma-app/src/components/ui/LayoutUtente.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/LayoutUtente.js ~/bacheca-scherma-app/src/components/ui/LayoutUtente.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/App.js ~/bacheca-scherma-app/src/App.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Bacheca.js ~/bacheca-scherma-app/src/pages/bacheca/Bacheca.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaAvviso.js ~/bacheca-scherma-app/src/pages/admin/ModificaAvviso.js
+cp ~/Documents/App_bacheca_scherma/files\ react/Avvisi.js ~/bacheca-scherma-app/src/pages/admin/Avvisi.js
+cp ~/Documents/App_bacheca_scherma/files\ react/App.js ~/bacheca-scherma-app/src/App.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cp ~/Documents/App_bacheca_scherma/files\ react/LayoutUtente.js ~/bacheca-scherma-app/src/components/ui/LayoutUtente.js
+cp ~/Documents/App_bacheca_scherma/files\ react/AggiungiFiglio.js ~/bacheca-scherma-app/src/pages/bacheca/AggiungiFiglio.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Login.js ~/bacheca-scherma-app/src/pages/auth/Login.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/AdminIscritti.js ~/bacheca-scherma-app/src/pages/admin/Iscritti.js
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaIscritto.js ~/bacheca-scherma-app/src/pages/admin/ModificaIscritto.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaIscritto.js ~/bacheca-scherma-app/src/pages/admin/ModificaIscritto.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Iscrizione.js ~/bacheca-scherma-app/src/pages/auth/Iscrizione.js
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaIscritto.js ~/bacheca-scherma-app/src/pages/admin/ModificaIscritto.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/ModificaIscritto.js ~/bacheca-scherma-app/src/pages/admin/ModificaIscritto.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+cp ~/Documents/App_bacheca_scherma/files\ react/Categorie.js ~/bacheca-scherma-app/src/pages/admin/Categorie.js
+cd ~/bacheca-scherma-app && npm run build
+cp -r ~/bacheca-scherma-app/build/. ~/bacheca-scherma/build/ && cd ~/bacheca-scherma && firebase deploy --only hosting
+
+Lancio backup
+cd ~/claude_code/App_bacheca_scherma-docs && GOOGLE_APPLICATION_CREDENTIALS=../bacheca-scherma-firebase/functions/serviceAccount.json node backup-firestore.js
+
+primo backup : backup-2026-06-08T13-54-34.json
+ultimo backup: backup-2026-07-21T13-14-40.json
+post pulizia : backup-2026-07-21T14-00-54.json
+
+
+Lancio Restore
+da francescocordua@MacBook-Air-di-Francesco App_bacheca_scherma-docs % 
+
+GOOGLE_APPLICATION_CREDENTIALS=~/claude_code/bacheca-scherma-firebase/functions/serviceAccount.json node ~/claude_code/App_bacheca_scherma-docs/restore-firestore.js /Users/francescocordua/claude_code/App_bacheca_scherma-docs/backup-2026-07-21T13-14-40.json
+
+Per riprendere la sessione usa:
+claude --resume 455cd4a1-e71f-4f19-abb9-27ade0c77e63                                          
+claude --continue
+
+Perfetto. Ecco lo schema risultante:
+
+bacheca-scherma-firebase/          ← unica root del progetto
+│
+├── src/                           ← sorgente React (componenti, pagine, hooks…)
+├── public/                        ← manifest.json, icone, service-worker sorgente
+├── build/                         ← output React (generato da npm run build)
+│
+├── functions/                     ← Cloud Functions Node.js
+│   ├── admin.js
+│   ├── notifiche.js
+│   ├── categorie.js
+│   └── package.json               ← dipendenze Functions (separato)
+│
+├── package.json                   ← dipendenze React + script unificati
+│   scripts:
+│     start        → react-scripts start
+│     build        → react-scripts build
+│     deploy       → npm run build + firebase deploy --only hosting
+│     deploy:all   → npm run build + firebase deploy
+│
+├── firebase.json                  ← public: "build" ✓
+├── firestore.rules
+├── firestore.indexes.json
+├── storage.rules
+├── tailwind.config.js
+├── postcss.config.js
+├── .gitignore
+└── genera-icone.js / .py
+

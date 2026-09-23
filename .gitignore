@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+.claude/
+
+# backup Firestore — contengono dati personali, mai su GitHub
+backup-*.json
