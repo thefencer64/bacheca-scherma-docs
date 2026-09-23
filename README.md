@@ -1,4 +1,8 @@
-# Bacheca Scherma — Documentazione
+<h1 align="center">Bacheca Scherma — Documentazione</h1>
+
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg">
+</p>
 
 Manuali e documentazione di supporto per l'app [Bacheca Scherma](https://github.com/thefencer64/bacheca-scherma).
 
