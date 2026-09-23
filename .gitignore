@@ -4,3 +4,9 @@ node_modules/
 
 # backup Firestore — contengono dati personali, mai su GitHub
 backup-*.json
+
+# script e dipendenze di backup/restore — spostati in bacheca-scherma-utils
+backup-firestore.js
+restore-firestore.js
+package.json
+package-lock.json
